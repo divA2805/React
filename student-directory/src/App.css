@@ -1,0 +1,25 @@
+#root {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.student-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.student-card h2 {
+  margin: 0 0 10px;
+}
+
+.student-card p {
+  margin: 5px 0;
+}
