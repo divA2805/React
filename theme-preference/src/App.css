@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+/* Light Theme */
+
+.app.light {
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+/* Dark Theme */
+
+.app.dark {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+/* Card */
+
+.theme-card {
+  width: 400px;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.dark .theme-card {
+  background-color: #2c2c2c;
+}
+
+.theme-card h1 {
+  margin-bottom: 25px;
+}
+
+.current-theme {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #ddd;
+  color: #222;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button.active {
+  background-color: #333;
+  color: white;
+}
+
+.dark button {
+  background-color: #555;
+  color: white;
+}
+
+.dark button.active {
+  background-color: white;
+  color: #222;
+}
