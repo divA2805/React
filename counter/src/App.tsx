@@ -6,8 +6,7 @@ const App = () => {
     document.title = `Count: ${count}`;
   }, [count]);
   //const increase = () => setCount((currentCount) => currentCount + 1)
-  const decrease = () =>
-    setCount((currentCount) => (currentCount > 0 ? currentCount - 1 : 0));
+  const decrease = () =>setCount((currentCount) => (currentCount > 0 ? currentCount - 1 : 0));
   const reset = () => setCount(0);
 
   return (
@@ -22,7 +21,7 @@ const App = () => {
           <button type="button" onClick={reset}>
             Reset
           </button>
-          <button type="button" onClick={() => setCount(count + 1)}>
+          <button type="button" onClick={decrease}>
             +
           </button>
         </div>
