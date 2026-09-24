@@ -1,0 +1,89 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.employee-card {
+  width: 300px;
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.employee-card p {
+  margin: 8px 0;
+  color: #333;
+  font-size: 14px;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #d1d5db;
+  margin: 10px 0;
+}
+
+/* Page Title Styling */
+.page-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px;
+  color: #1f2937;
+}
+
+/* Search Input Styling */
+.search-input {
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  padding: 10px 12px;
+  margin: 0 20px;
+  font-size: 14px;
+  width: 300px;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Employee List Grid */
+.employee-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  margin: 24px 20px;
+  padding: 0 20px;
+}
+
+/* Loading Styling */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+.loading-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3b82f6;
+  /* animation: pulse 1.5s ease-in-out infinite; */
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
